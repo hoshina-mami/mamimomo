@@ -1,0 +1,373 @@
+@charset    'utf-8';
+@import     '_html5reset';
+
+body {
+	font-size: 16px;
+	font-family: "Verdana", "Osaka", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	line-height: 1.5em;
+	color: #353535;
+}
+
+a {
+	color: green;
+	text-decoration: none;
+}
+
+
+.header {
+	width: 80%;
+	height: 200px;
+	margin: 0 auto;
+	padding-top: 20px;
+
+	h1 {
+		background-repeat: no-repeat;
+		width: 546px;
+		height: 132px;
+		margin: 0 auto;
+
+		// p {
+		// 	display: none;
+		// }
+	}
+
+	h2 {
+		display: none;
+	}
+
+}
+
+.contents {
+	width: 80%;
+	margin: 0 auto;
+
+	.copy,
+	.store {
+		margin-bottom: 20px;
+	}
+
+	.news,
+	.howToPlay,
+	.contact {
+		margin-bottom: 30px;
+		clear : left;
+
+		p {
+			margin-bottom: 10px;
+		}
+	}
+
+	.copy {
+		color: #87621a;
+		text-align: center;
+		position: relative;
+	}
+
+	.store {
+		text-align: center;
+		position: relative;
+	}
+
+	.storeBtn {
+		display: inline-block;
+		text-decoration: none;
+
+		&.apple {
+			margin-right: 10px;
+		}
+		&.google {
+			margin-left: 10px;
+
+			img {
+				height: 40px;
+  				width: 130px;
+			}
+		}
+	}
+
+	.news_list {
+		li {
+			position: relative;
+			margin-bottom: 2px;
+			padding-left: 24px;
+
+			span {
+				display: inline-block;
+			}
+
+			.date {
+				// font-weight: bold;
+				color: #555;
+			}
+
+			.line_second {
+				margin-left: 113px;
+			}
+		}
+
+		.new:before {
+			content: "";
+			background-image: url("../images/pic_new.png");
+			background-repeat: no-repeat;
+			background-size: 20px 20px;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 2px;
+			left: 0;
+		}
+	}
+
+	.howToPlay_list {
+		overflow: hidden;
+
+		li {
+			width: 31%;
+			float: left;
+			margin-right: 20px;
+
+			&:last-child {
+				margin-right: 0px;
+			}
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	h1 {
+		border-bottom: dotted 3px #fff;
+		// color: #fff;
+		font-size: 18px;
+		line-height: 40px;
+		margin-bottom: 10px;
+		padding-left: 40px;
+		position: relative;
+
+		&:before {
+			content: "";
+			background-image: url("../images/pic_1_1.png");
+			background-repeat: no-repeat;
+			background-size: 34px 34px;
+			width: 34px;
+			height: 34px;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+		}
+	}
+
+	.notice {
+		color: #666;
+	}
+
+	.sleepnel {
+		.sleepnel_box {
+			overflow: hidden;
+		}
+
+		.sleepnel_link {
+			width: 200px;
+			display: block;
+  			float: left;
+
+  			img {
+  				width: 200px;
+  			}
+		}
+
+		.sleepnel_text {
+			margin-top: 15px;
+		}
+	}
+}
+
+.footer {
+	width: 80%;
+	margin: 20px auto;
+	font-size: 12px;
+	text-align: center;
+	clear: left;
+}
+
+/* ひつじアニメ */
+.sheep_box {
+	position: relative;
+	right: -1000px;
+	z-index: 0;
+	animation-name: sheep_run;
+	animation-duration: 12s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.sheep_img {
+	img {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		z-index: 2;
+		animation-name: sheep_rotation;
+		animation-duration: 2s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+
+	&:before {
+		content: "";
+		background-image: url("../images/pic_shadow.png");
+		background-repeat: no-repeat;
+		background-size: 86px 28px;
+		width: 86px;
+		height: 28px;
+		position: absolute;
+		top: 74px;
+  		left: 7px;
+		z-index: 1;
+	}
+
+}
+@keyframes sheep_run {
+	0% {transform: translateX(0px);}
+	99.9%, to {transform: translateX(-1900px);}
+}
+@keyframes sheep_rotation {
+	0% {transform: rotate(0deg);}
+	99.9%, to {transform: rotate(-360deg);}
+}
+
+
+@media only screen and (max-width:700px){
+	.wrapper {
+		background-position: 0 -860px;
+	}
+
+	.header {
+		height: 140px;
+
+		h1 {
+			width: 400px;
+			background-size: 400px;
+		}
+	}
+
+	.contents{
+		.howToPlay_list {
+			li {
+				width: 29%;
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width:481px){
+	body {
+		font-size: 14px;
+	}
+	.wrapper {
+		background-position: 0 -670px;
+  		background-size: 500px;
+	}
+
+	.header {
+		height: 100px;
+
+		h1 {
+			width: 260px;
+			background-size: 260px;
+		}
+	}
+
+	.contents{
+		.storeBtn {
+			display: block;
+
+			&.apple {
+				margin-right: 0px;
+			}
+			&.google {
+				margin-top: 10px;
+				margin-left: 0px;
+			}
+		}
+
+		.news_list {
+			li {
+				.line_second {
+					margin-left: 0px;
+				}
+			}
+		}
+
+		.howToPlay_list {
+			li {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+		}
+
+		.sleepnel {
+			.sleepnel_link {
+				width: 200px;
+				display: block;
+	  			float: none;
+
+	  			img {
+	  				width: 200px;
+	  			}
+			}
+
+			.sleepnel_text {
+				margin-top: 12px;
+			}
+		}
+	}
+
+	/* ひつじアニメ */
+	.sheep_box {
+		position: relative;
+		right: -520px;
+		z-index: 0;
+		animation-name: sheep_run;
+		animation-duration: 6s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+	.sheep_img {
+		img {
+			width: 80px;
+			height: 80px;
+			position: absolute;
+			z-index: 2;
+			animation-name: sheep_rotation;
+			animation-duration: 2s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+
+		&:before {
+			content: "";
+			background-image: url("../images/pic_shadow.png");
+			background-repeat: no-repeat;
+			background-size: 64px;
+			width: 64px;
+			height: 20px;
+			position: absolute;
+			top: 64px;
+	  		left: 9px;
+			z-index: 1;
+		}
+
+	}
+	@keyframes sheep_run {
+		0% {transform: translateX(0px);}
+		99.9%, to {transform: translateX(-800px);}
+	}
+	@keyframes sheep_rotation {
+		0% {transform: rotate(0deg);}
+		99.9%, to {transform: rotate(-360deg);}
+	}
+	
+}
