@@ -3,16 +3,16 @@
 <title>MamiMomo.com</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
-<!--
+
 <meta name="description" content="MamiMomo.com">
-<meta name="keywords" content="MamiMomo,まみもも,マミモモ,ひつじだま,アプリ,ゲーム,無料,ひつじ,羊,ヒツジ,Android,アンドロイド,iPhone,web制作">
+<meta name="keywords" content="MamiMomo,まみもも,マミモモ,ひつじだま,アプリ,ゲーム,無料,ひつじ,羊,ヒツジ,Android,アンドロイド,iPhone,web制作,パンダのたぷたぷ">
 
 <meta property="og:title" content="MamiMomo.com">
 <meta property="og:url" content="http://mamimomo.com/">
-<meta property="og:image" content="http://hitsuji-dama.com/images/iOS_1024.png">
+<meta property="og:image" content="http://mamimomo.com/images/pic_logo.png">
 
 <link rel="shortcut icon" href="images/hitsuji.ico" type="image/vnd.microsoft.icon">
--->
+
 <link href="css/index.css" rel="stylesheet" type="text/css" />
 <style>
 body {
@@ -54,7 +54,7 @@ body {
 			   		</a>
 
 					<a href="https://play.google.com/store/apps/details?id=com.mamimomo.taputapuCount" class="utl_inlineBlock">
-						<img alt="Android app on Google Play" src="https://developer.android.com/images/brand/ja_app_rgb_wo_45.png" />
+						<img class="btn_google" alt="Android app on Google Play" src="https://developer.android.com/images/brand/ja_app_rgb_wo_45.png" />
 					</a>
 		   		</div>
 			</li>
@@ -63,7 +63,8 @@ body {
 					<img class="pic_icon" src="images/icon_sheep.png" alt="ひつじだま">
 					<div class="list_box_title">
 						<p>ひつじだま</p>
-						<span>2015.05.21 公開</span>
+						<span>2015.05.12 公開</span><br>
+						<span><a href="http://hitsuji-dama.com">Webサイト</a></span>
 					</div>
 				</div>
 				<div class="list_box_middle">
@@ -75,7 +76,7 @@ body {
 			   		</a>
 
 					<a href="https://play.google.com/store/apps/details?id=com.mamimomo.hitsuji_dama" class="utl_inlineBlock">
-						<img alt="Android app on Google Play" src="https://developer.android.com/images/brand/ja_app_rgb_wo_45.png" />
+						<img class="btn_google" alt="Android app on Google Play" src="https://developer.android.com/images/brand/ja_app_rgb_wo_45.png" />
 					</a>
 		   		</div>
 			</li>
@@ -87,7 +88,7 @@ body {
 						<span>Coming soon...</span>
 					</div>
 				</div>
-				<div class="list_box_middle">ライトな対戦型脳トレゲーム！</div>
+				<div class="list_box_middle">ライトな脳トレゲーム！対戦もできちゃう！</div>
 				<div class="list_box_bottom"></div>				
 			</li>
 		</ul>
@@ -97,13 +98,25 @@ body {
 
 		<section class="news utl_gray">
 			<h2 class="text_menu" id="jsMenuNews">News</h2>
-			<div class="box_toggle utl_gray">にゅーすだよ</div>
+			<div class="box_toggle utl_gray">
+				<ul>
+					<li>2015.09.10：当Webサイトを公開しました。</li>
+					<li>2015.07.21：「パンダのたぷたぷ ~たぷたぷをかぞえよう~」をリリースしました。</li>
+					<li>2015.05.12：「ひつじだま」をリリースしました。</li>
+					<li>2015.05.10：<a href="http://hitsuji-dama.com">「ひつじだま」Webサイト</a>を公開しました。</li>
+				</ul>
+			</div>
 		</section>
 
 
 		<section class="contact utl_gray">
 			<h2 class="text_menu" id="jsMenuContact">Contact</h2>
 			<div class="box_toggle utl_gray">
+				<p class="text_name">まみもも</p>
+				<p>個人でスマホアプリやWebサイトを作成しています。<br>
+				福岡出身、東京在住。IT企業に勤めています。<br><br></p>
+				
+				<p>お問い合わせ・ご意見等ございましたら、下記アドレスへお気軽にお送りください。</p>
 				<p><a href="mailto:mamimomo722@gmail.com?subject=mamimomoお問い合わせ&amp;body=ご記入ください">mamimomo722@gmail.com</a></p>
 			</div>
 		</section>
@@ -114,42 +127,9 @@ body {
 		<p>Copyright &copy; 2015 MamiMomo All Rights Reserved.</p>
 	</footer>
 
-
-
-
-
-	<div class="contents">
-
-		<section class="contact">
-			<h1>お問い合わせ</h1>
-			<!-- <p>ひつじだまへのご意見・ご要望等ございましたら、こちらからお気軽にお願い致します。</p> -->
-			<p><a href="mailto:mamimomo722@gmail.com?subject=mamimomoお問い合わせ&amp;body=ご記入ください">mamimomo722@gmail.com</a></p>
-			<p class="notice">
-			※お問い合わせ頂いた内容によっては返信にお時間がかかる場合がございます。あらかじめご了承ください。
-			</p>
-		</section>
-
-	</div>
-
 </div>
 
-<script src="js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript">
-(function () {
-	document.addEventListener('DOMContentLoaded', function() {
-		var $menuNews = $('#jsMenuNews'),
-			$menuContact = $('#jsMenuContact');
-
-		$menuNews.on('click', function () {
-			$(this).next().slideToggle('fast');
-		});
-
-		$menuContact.on('click', function () {
-			$(this).next().slideToggle();
-		});
-	});
-})();
-</script>
+<script src="js/index.min.js"></script>
 
 </body>
 </html>

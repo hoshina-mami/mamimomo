@@ -9,7 +9,8 @@ body {
 }
 
 a {
-	text-decoration: none;
+	// text-decoration: none;
+	color: #666;
 }
 
 section {
@@ -37,7 +38,8 @@ section {
 }
 
 .box_toggle {
-	width: 435px;
+	width: 415px;
+	padding: 10px;
 	display: none;
 }
 
@@ -117,12 +119,18 @@ section {
 		margin-left: 5px;
 	}
 
+	.btn_google {
+		width: 130px;
+		height: 42px;
+	}
+
 }
 
 .text_menu {
 	font-size: 18px;
     font-weight: lighter;
     line-height: 50px;
+    padding-left: 10px;
     position: relative;
 
     &:after {
@@ -136,33 +144,150 @@ section {
 		top: 10px;
 		right: 10px;
     }
+
+    &.active:after {
+		transform: scaleY(-1);
+    }
 }
 
 .news {
 	width: 435px;
 	text-align: left;
 	float: left;
+
+	li {
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .contact {
 	width: 435px;
 	text-align: left;
 	float: right;
+
+	.text_name {
+		font-size: 15px;
+	}
+
+	p {
+		margin-bottom: 5px;
+	}
 }
 
 .footer {
 	clear: both;
+	margin-bottom: 10px;
 	color: #666666;
 	font-size: 14px;
 }
 
+.privacy {
+	margin: 20px auto;
+	padding: 10px;
+	text-align: left;
+}
 
-@media only screen and (max-width:900px){
+.btn_logo {
+	margin: 10px auto;
+	width: 100px;
+	height: 59px;
+	background-image: url("../images/pic_logo.png");
+	background-repeat: no-repeat;
+	background-size: 100px 59px;
+
+	a {
+		display: block;
+		width: 100px;
+		height: 59px;
+	}
+}
+
+
+@media only screen and (max-width:920px){
+	.box_wrapper {
+		width: 600px;
+	}
+
+	.works {
+		ul li {
+			margin-bottom: 30px;
+
+			&:nth-child(3n) {
+				margin-right: 30px;
+			}
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.news {
+		margin-top: -30px;
+	}
+
+	.news,
+	.contact {
+		width: 600px;
+	}
+
+	.box_toggle {
+		width: 580px;
+	}
 	
 }
 
 
-@media only screen and (max-width:481px){
+@media only screen and (max-width:600px){
+	.box_wrapper {
+		width: 280px;
+	}
+
+	.header {
+	margin: 70px 0;
+
+	.text_title {
+		margin: 50px 0 20px;
+		font-size: 38px;
+		font-weight: lighter;
+	}
+
+	.text_subTitle {
+		color: #666666;
+		font-size: 14px;
+	}
+}
+
+	.works {
+		ul li {
+			margin-bottom: 30px;
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.news {
+		margin-top: -30px;
+	}
+
+	.news,
+	.contact {
+		width: 280px;
+	}
+
+	.box_toggle {
+		width: 260px;
+	}
 
 	
 }
