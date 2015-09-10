@@ -24,25 +24,101 @@ body {
 </head>
 
 <body>
-<div class="wrapper">
+<div class="box_wrapper">
 
-	<header>
-		<h1><p>MamiMomo.com</p></h1>
+	<header class="header">
+		<div class="pic_logo"></div>
+
+		<h1 class="text_title">MamiMomo.com</h1>
+		<p class="text_subTitle">スマートフォン向けアプリ・Webサイトを作っています。</p>
 	</header>
 
+
+	<section class="works">
+		<h2>Works</h2>
+		<ul>
+			<li class="utl_gray">
+				<div class="list_box_upper">
+					<img class="pic_icon" src="images/icon_panda.png" alt="パンダのたぷたぷ">
+					<div class="list_box_title">
+						<p>パンダのたぷたぷ<br>~たぷたぷをかぞえよう</p>
+						<span>2015.07.21 公開</span>
+					</div>
+				</div>
+				<div class="list_box_middle">
+					<p>「パンダのたぷたぷ」公式脳トレゲーム！<br>たぷたぷを数えて、仲間たちを集めよう！</p>
+				</div>
+				<div class="list_box_bottom">
+					<a href="https://itunes.apple.com/jp/app/id1016279159" class="utl_inlineBlock">
+						<img src="images/btn_AppStore.png" />
+			   		</a>
+
+					<a href="https://play.google.com/store/apps/details?id=com.mamimomo.taputapuCount" class="utl_inlineBlock">
+						<img alt="Android app on Google Play" src="https://developer.android.com/images/brand/ja_app_rgb_wo_45.png" />
+					</a>
+		   		</div>
+			</li>
+			<li class="utl_gray">
+				<div class="list_box_upper">
+					<img class="pic_icon" src="images/icon_sheep.png" alt="ひつじだま">
+					<div class="list_box_title">
+						<p>ひつじだま</p>
+						<span>2015.05.21 公開</span>
+					</div>
+				</div>
+				<div class="list_box_middle">
+					<p>ころころ転がるひつじを数えて、<br>いろんなひつじを集めよう！</p>
+				</div>
+				<div class="list_box_bottom">
+					<a href="https://itunes.apple.com/us/app/hitsujidama/id993428207" class="utl_inlineBlock">
+						<img src="images/btn_AppStore.png" />
+			   		</a>
+
+					<a href="https://play.google.com/store/apps/details?id=com.mamimomo.hitsuji_dama" class="utl_inlineBlock">
+						<img alt="Android app on Google Play" src="https://developer.android.com/images/brand/ja_app_rgb_wo_45.png" />
+					</a>
+		   		</div>
+			</li>
+			<li class="utl_gray">
+				<div class="list_box_upper">
+					<img class="pic_icon" src="images/icon_none.png" alt="NoImage">
+					<div class="list_box_title">
+						<p>VS Number</p>
+						<span>Coming soon...</span>
+					</div>
+				</div>
+				<div class="list_box_middle">ライトな対戦型脳トレゲーム！</div>
+				<div class="list_box_bottom"></div>				
+			</li>
+		</ul>
+	</section>
+
+	<div class="box_bottomContent">
+
+		<section class="news utl_gray">
+			<h2 class="text_menu" id="jsMenuNews">News</h2>
+			<div class="box_toggle utl_gray">にゅーすだよ</div>
+		</section>
+
+
+		<section class="contact utl_gray">
+			<h2 class="text_menu" id="jsMenuContact">Contact</h2>
+			<div class="box_toggle utl_gray">
+				<p><a href="mailto:mamimomo722@gmail.com?subject=mamimomoお問い合わせ&amp;body=ご記入ください">mamimomo722@gmail.com</a></p>
+			</div>
+		</section>
+
+	</div>
+
+	<footer class="footer">
+		<p>Copyright &copy; 2015 MamiMomo All Rights Reserved.</p>
+	</footer>
+
+
+
+
+
 	<div class="contents">
-
-		<p>ひつじだま</p>
-
-		<div class="store">
-			<a href="https://itunes.apple.com/us/app/hitsujidama/id993428207" class="storeBtn apple">
-				<img src="images/btn_AppStore.png" />
-	   		</a>
-
-			<a href="https://play.google.com/store/apps/details?id=com.mamimomo.hitsuji_dama" class="storeBtn google">
-				<img alt="Android app on Google Play" src="https://developer.android.com/images/brand/ja_app_rgb_wo_45.png" />
-			</a>
-   		</div>
 
 		<section class="contact">
 			<h1>お問い合わせ</h1>
@@ -55,11 +131,25 @@ body {
 
 	</div>
 
-	<footer>
-		<p>Copyright &copy; 2015 MamiMomo All Rights Reserved.</p>
-	</footer>
-
 </div>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+(function () {
+	document.addEventListener('DOMContentLoaded', function() {
+		var $menuNews = $('#jsMenuNews'),
+			$menuContact = $('#jsMenuContact');
+
+		$menuNews.on('click', function () {
+			$(this).next().slideToggle('fast');
+		});
+
+		$menuContact.on('click', function () {
+			$(this).next().slideToggle();
+		});
+	});
+})();
+</script>
 
 </body>
 </html>
