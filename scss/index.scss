@@ -40,6 +40,7 @@ section {
 .box_toggle {
 	width: 415px;
 	padding: 10px;
+	border-radius: 6px;
 	display: none;
 }
 
@@ -58,6 +59,7 @@ section {
 	.text_title {
 		margin: 50px 0 20px;
 		font-size: 58px;
+		text-align: center;
 		font-weight: lighter;
 	}
 
@@ -81,6 +83,7 @@ section {
 			width: 280px;
 			height: 220px;
 			margin-right: 30px;
+			border-radius: 6px;
 			float: left;
 
 			&:nth-child(3n) {
@@ -126,6 +129,25 @@ section {
 
 }
 
+.thanks {
+	text-align: left;
+	font-size: 13px;
+	border-radius: 6px;
+
+	p {
+		margin-left: 10px;
+    	padding-bottom: 10px;
+	}
+}
+.text_title {
+	font-size: 18px;
+    font-weight: lighter;
+    line-height: 50px;
+    padding-left: 10px;
+    text-align: left;
+    position: relative;
+}
+
 .text_menu {
 	font-size: 18px;
     font-weight: lighter;
@@ -152,6 +174,7 @@ section {
 
 .news {
 	width: 435px;
+	border-radius: 6px;
 	text-align: left;
 	float: left;
 
@@ -166,6 +189,7 @@ section {
 
 .contact {
 	width: 435px;
+	border-radius: 6px;
 	text-align: left;
 	float: right;
 
@@ -226,7 +250,7 @@ section {
 		}
 	}
 
-	.news {
+	.thanks {
 		margin-top: -30px;
 	}
 
@@ -248,19 +272,19 @@ section {
 	}
 
 	.header {
-	margin: 70px 0;
+		margin: 70px 0;
 
-	.text_title {
-		margin: 50px 0 20px;
-		font-size: 38px;
-		font-weight: lighter;
-	}
+		.text_title {
+			margin: 50px 0 20px;
+			font-size: 32px;
+			font-weight: lighter;
+		}
 
-	.text_subTitle {
-		color: #666666;
-		font-size: 14px;
+		.text_subTitle {
+			color: #666666;
+			font-size: 14px;
+		}
 	}
-}
 
 	.works {
 		ul li {
@@ -276,7 +300,7 @@ section {
 		}
 	}
 
-	.news {
+	.thanks {
 		margin-top: -30px;
 	}
 
