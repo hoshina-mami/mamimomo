@@ -218,10 +218,41 @@ section {
 	font-size: 14px;
 }
 
-.privacy {
+.privacy,
+.taputapu {
 	margin: 20px auto;
 	padding: 10px;
 	text-align: left;
+	border-radius: 6px;
+}
+
+.taputapu {
+	.pic_icon {
+		width: 150px;
+		height: 150px;
+		margin-bottom: 10px;
+	}
+
+	.list_box_upper {
+		padding: 10px;
+		text-align: center;
+	}
+
+	.list_box_middle {
+		clear: both;
+		font-size: 13px;
+		padding: 10px 20px;
+	}
+
+	.list_box_btn {
+		margin-left: 5px;
+		text-align: center;
+	}
+
+	.btn_google {
+		width: 127px;
+		height: 40px;
+	}
 }
 
 .btn_logo {
