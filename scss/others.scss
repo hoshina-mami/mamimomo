@@ -1,0 +1,144 @@
+@charset    'utf-8';
+@import     '_html5reset';
+
+body {
+	font-size: 13px;
+	font-family: "Verdana", "Osaka", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	line-height: 1.5em;
+	color: #353535;
+	background-repeat: repeat-x;
+}
+
+a {
+	// text-decoration: none;
+	color: #666;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
+//util -----------------------------------------
+.utl_gray {
+	background-color: #f2f2f2;
+}
+
+.utl_inlineBlock {
+	display: inline-block;
+}
+
+.hide {
+	display: none;
+}
+//----------------------------------------------
+
+
+.box_wrapper {
+	width: 900px;
+	margin: 0 auto;
+	line-height: 28px;
+}
+
+.header,
+.list_box_upper {
+	padding: 30px 0;
+	text-align: center;
+
+	h1 {
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+}
+
+.list_box_middle {
+	clear: both;
+	padding: 10px 0;
+	text-align: center;
+
+	span {
+		font-weight: bold;
+	}
+}
+
+.img_sh {
+	width: 60%;
+
+	&.left {
+		margin-right: 20px;
+	}
+}
+
+.img_sh_big {
+	width: 80%;
+}
+
+
+.footer {
+	clear: both;
+	margin-bottom: 10px;
+	color: #666666;
+	text-align: center;
+}
+
+.content {
+	margin: 0 auto 20px;
+	padding: 10px;
+	text-align: left;
+	border-radius: 6px;
+}
+
+.btn_logo {
+	margin: 10px auto;
+	width: 100px;
+	height: 59px;
+	background-image: url("../images/pic_logo2.png");
+	background-repeat: no-repeat;
+	background-size: 100px 59px;
+
+	a {
+		display: block;
+		width: 100px;
+		height: 59px;
+	}
+}
+
+
+@media only screen and (max-width:920px){
+	.box_wrapper {
+		width: 600px;
+	}
+
+	.img_sh {
+		&.left {
+			margin-right: 0px;
+			margin-bottom: 20px;
+		}
+	}
+	.img_sh_big {
+		width: 90%;
+	}
+	
+}
+
+
+@media only screen and (max-width:600px){
+
+	.box_wrapper {
+		width: 320px;
+	}
+
+	.header {
+		width: 320px;
+	}
+
+	.img_sh {
+		width: 100%;
+		&.left {
+			margin-right: 0px;
+			margin-bottom: 20px;
+		}
+	}
+	.img_sh_big {
+		width: 100%;
+	}
+}
